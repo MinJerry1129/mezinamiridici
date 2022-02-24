@@ -1,0 +1,34 @@
+.DS_Store
+spa/dist
+**/.aws-sam
+**/node_modules/
+
+spa/tests/e2e/videos/
+spa/tests/e2e/screenshots/
+
+# local env files
+.env.local
+.env.*.local
+**/env.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#sensitive
+/infrastructure/.env
+/infrastructure/*.log
+/infrastructure/src/dist/
+/infrastructure/test/coverage
+/spa/.env
+/spa/.env.production

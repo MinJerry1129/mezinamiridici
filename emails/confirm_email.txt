@@ -1,0 +1,12 @@
+Vítáme vás na portálu Mezi námi řidiči,
+
+a vážíme si vaší důvěry. Nejdříve si ale musíme ověřit, že někdo nepodvrhnul
+vaši emailovou adresu a že se jedná skutečně o váš email.
+
+Registraci dokončíte otevřením této adresy:
+
+{{verificationLink}}
+
+Přejeme spoustu kilometrů bez nehody. A hlavně klid!
+
+Váš tým portálu Mezi námi řidici

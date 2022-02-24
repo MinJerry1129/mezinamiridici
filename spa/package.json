@@ -1,0 +1,82 @@
+{
+  "name": "between-us-drivers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "prod": "vue-cli-service serve --mode production",
+    "build": "vue-cli-service build",
+    "buildDev": "vue-cli-service build --mode development",
+    "lint": "vue-cli-service lint",
+    "deploy": "vue-cli-service s3-deploy",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@editorjs/delimiter": "^1.1.0",
+    "@editorjs/embed": "^2.3.1",
+    "@editorjs/header": "^2.5.0",
+    "@editorjs/image": "^2.5.0",
+    "@editorjs/list": "^1.5.0",
+    "@editorjs/paragraph": "^2.7.0",
+    "@editorjs/quote": "^2.3.0",
+    "@editorjs/table": "^1.2.2",
+    "@egjs/vue-infinitegrid": "^3.0.3",
+    "@vue/composition-api": "^1.0.0-beta.10",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.16.0",
+    "chart.js": "^2.9.3",
+    "core-js": "^2.6.11",
+    "dayjs": "^1.8.31",
+    "jwt-decode": "^2.2.0",
+    "loglevel": "^1.6.8",
+    "register-service-worker": "^1.7.1",
+    "vee-validate": "^3.3.7",
+    "vue": "^2.6.11",
+    "vue-authenticate": "^1.4.1",
+    "vue-axios": "^2.1.5",
+    "vue-chartkick": "^0.6.1",
+    "vue-content-loader": "^0.2.3",
+    "vue-editor-js": "^2.0.1",
+    "vue-i18n": "^8.20.0",
+    "vue-router": "^3.3.4",
+    "vue-scrollto": "^2.18.2",
+    "vuejs-datepicker": "^1.6.2",
+    "vuewordcloud": "^18.7.12",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-e2e-cypress": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-plugin-pwa": "^3.12.1",
+    "@vue/cli-plugin-unit-jest": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.5.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-i18n": "^0.6.1",
+    "vue-cli-plugin-s3-deploy": "^3.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
